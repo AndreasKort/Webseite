@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do-App</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <h1>To-Do-App</h1>
+  <!--Container für die Anmeldung -->
+  <form id="login-form">
+    <h2>Anmeldung</h2>
+    <input type="text" id="username" placeholder="Benutzername" required>
+    <input type="password" id="password" placeholder="Passwort" required>
+    <button type="submit">Anmelden</button>
+  </form>
+  <!--Container für die Aufgabenliste -->
+  <div id="app-container" style="display: none;">
+    <form id="add-task-form">
+      <h2>Aufgabe hinzufügen</h2>
+      <input type="text" id="task-title" placeholder="Titel" required>
+      <textarea id="task-description" placeholder="Beschreibung"></textarea>
+      <input type="date" id="task-dueDate" placeholder="Fälligkeitsdatum" required>
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <div id="task-list">
+      <h2>Aufgabenliste</h2>
+      <input type="text" id="search-input" placeholder="Suche nach Aufgaben...">
+      <button id="search-button">Suchen</button>
+      <ul id="tasks">
+        <!-- Aufgaben werden hier hinzugefügt -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
